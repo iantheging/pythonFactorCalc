@@ -71,7 +71,7 @@ print('{0:.4}'.format(t.perimeter()))
 # t2 = Triangle(pa, pb, pc)
 #
 # print('{0:.4}'.format(t2.perimeter()))
-while(True):
+while True:
     print("\nRectangle Program: Please input points in a clockwise fashion in x,y form")
     p1x, p1y = input("Point 1: ").split(',')
     p2x, p2y = input("Point 2: ").split(',')
@@ -86,4 +86,8 @@ while(True):
     if userChoice is 'p':
         print(f'The perimeter is {r.perimeter()}')
     else:
-        print(r.area())
+        print(f"The area is {r.area()}")
+    userEnd = input("Enter q to quit program: ")
+    if userEnd is 'q':
+        print("Goodbye")
+        break
