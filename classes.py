@@ -81,5 +81,8 @@ p2 = Point(float(p2x), float(p2y))
 p3 = Point(float(p3x), float(p3y))
 p4 = Point(float(p4x), float(p4y))
 r = Rectangle(p1, p2, p3, p4)
-print(f'The perimeter is {r.perimeter()}')
-print(r.area())
+userChoice = input("Enter p for perimeter of a for area: ")
+if userChoice is 'p':
+    print(f'The perimeter is {r.perimeter()}')
+else:
+    print(r.area())
