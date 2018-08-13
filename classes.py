@@ -44,6 +44,12 @@ class Rectangle:
             return False
         return True
 
+    def check_square(self):
+        s1, s2, s3, s4 = self.side_lengths()
+        if s1 == s2 and s2 == s3 and s3 == s4:
+            return True
+        return False
+
 
 class Point:
     def __init__(self, x, y):
@@ -58,16 +64,3 @@ pC = Point(3, 1)
 t = Triangle(pA, pB, pC)
 
 print('{0:.4}'.format(t.perimeter()))
-
-# user controlled test
-# print("\nPlease input the points in x,y format")
-# pax, pay = input("Point 1: ").split(',')
-# pa = Point(float(pax), float(pay))
-# pbx, pby = input("Point 2: ").split(',')
-# pb = Point(float(pbx), float(pby))
-# pcx, pcy = input("Point 3: ").split(',')
-# pc = Point(float(pcx), float(pcy))
-#
-# t2 = Triangle(pa, pb, pc)
-#
-# print('{0:.4}'.format(t2.perimeter()))

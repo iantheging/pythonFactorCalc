@@ -1,6 +1,19 @@
 from classes import *
 
 while True:
+
+    object = input("Enter t for triangle or r for rectangle: ")
+
+    if object is 't':
+        print("\nPlease input the points in x,y format")
+        pax, pay = input("Point 1: ").split(',')
+        pa = Point(float(pax), float(pay))
+        pbx, pby = input("Point 2: ").split(',')
+        pb = Point(float(pbx), float(pby))
+        pcx, pcy = input("Point 3: ").split(',')
+        pc = Point(float(pcx), float(pcy))
+        t2 = Triangle(pa, pb, pc)
+
     print("\nRectangle Program: Please input points in a clockwise fashion in x,y form")
     p1x, p1y = input("Point 1: ").split(',')
     p2x, p2y = input("Point 2: ").split(',')
